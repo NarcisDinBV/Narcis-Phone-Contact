@@ -1,3 +1,5 @@
+package phoneMenu;
+
 public class Call {
     private long phoneNumber;
 
@@ -9,10 +11,17 @@ public class Call {
         return phoneNumber;
     }
 
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     @Override
     public String toString() {
         return "Call{" +
+//                "callIndex" + index +
                 "phoneNumber=" + phoneNumber +
                 '}';
     }
+
+
 }
